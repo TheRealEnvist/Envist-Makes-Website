@@ -57,7 +57,7 @@ body {
     top: 0px;
     transform-origin: center;
     width: 100%;
-    height: 2%;
+    height: 75px;
     z-index: 2;
     filter: blur(10px);
     opacity: 10%;

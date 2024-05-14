@@ -1,0 +1,64 @@
+body {
+    background: white;
+  }
+  p {
+    color: black;
+  }
+  h1 {
+    font-weight: bold;
+  }
+
+
+
+  .Background{
+    background-image:url("Background.png");
+    background-size: 50%;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 100%;
+    height: 500%;
+    
+    filter: blur(1px);
+    z-index: 1;
+  }
+
+.BarIcon{
+    background-image: url("Icon\ Trans.png");
+    position: absolute;
+    z-index: 3;
+    top: 0%;
+    left: 0px;
+    background-size: 100%;
+    width: 75px;
+    height: 75px;
+}
+
+
+  .BodyBlur{
+    background-color: white;
+    background-size: 1%;
+    position: absolute;
+    left: 0px;
+    bottom: -400%;
+    transform-origin: center;
+    width: 100%;
+    height: 400%;
+    z-index: 2;
+    filter: blur(100px);
+    opacity: 10%;
+  }
+
+  .TopBar{
+    background-color: white;
+    background-size: 1%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform-origin: center;
+    width: 100%;
+    height: 2%;
+    z-index: 2;
+    filter: blur(10px);
+    opacity: 10%;
+  }

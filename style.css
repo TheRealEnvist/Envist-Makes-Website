@@ -23,6 +23,13 @@ body {
     z-index: 1;
   }
 
+
+@keyframes OPEN {
+  0%{top: 50px; opacity: 0%;}
+  40%{opacity: 0%;}
+  100%{top: 0%; opacity: 100%;}
+}
+
 .BarIcon{
     background-image: url("Icon\ Trans.png");
     position: absolute;
@@ -32,6 +39,10 @@ body {
     background-size: 100%;
     width: 75px;
     height: 75px;
+    animation-name: OPEN;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
 }
 
 

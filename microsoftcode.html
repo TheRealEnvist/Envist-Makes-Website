@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Envist Makes | Access Code</title>
+        <link rel="icon" type="image/png" href="EV.png">
+        <link rel="stylesheet" href="style.css">
+    
+        <script>
+            function myFunction() {
+                const queryString = window.location.search;
+                console.log(queryString);
+                const urlParams = new URLSearchParams(queryString);
+                const product = urlParams.get('code')
+                console.log(product);
+                document.getElementById("demo").innerHTML = product;
+            }
+            </script>
+    
+    </head>
+    <body onload="myFunction()">
+        <div class="MicrosoftBackground"></div>
+        <div class="MicrosoftTopBar"></div>
+        <div class="BarIcon"></div>
+        
+        <div class="MicrosoftCodeNoBlur">
+            <div class="MicrosoftCodeText2">DO NOT SHARE WITH ANYONE</div>
+            <div class="MicrosoftCodeText3">Your activate code is:</div>
+            <div class="MicrosoftCodeText2Blur">DO NOT SHARE WITH ANYONE</div>
+            <div class="MicrosoftCodeText3Blur">Your activate code is:</div>
+            <div class="MicrosoftCodeText" id="demo"></div>
+            <div class="MicrosoftCode"></div>
+        </div>
+    </body>
+</html>

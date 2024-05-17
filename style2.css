@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "CooperHewitt";
+  src: url(CooperHewitt-Heavy.oft);
+}
+
+
+
+  .Background{
+    background-image:url("Background.png");
+    background-size: 50%;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 100%;
+    height: 500%;
+    
+    filter: blur(1px);
+    z-index: 1;
+  }
+
+  .MicrosoftBackground{
+    background-image:url("Background.png");
+    background-size: 50%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    
+    filter: blur(1px);
+    z-index: 1;
+  }
+
+@keyframes OPEN {
+  0%{top: 50px; opacity: 0%;}
+  40%{opacity: 0%;}
+  100%{top: 0%; opacity: 100%;}
+}
+
+.BarIcon{
+    background-image: url("Icon\ Trans.png");
+    position: absolute;
+    z-index: 3;
+    top: 0%;
+    left: 0px;
+    background-size: 100%;
+    width: 75px;
+    height: 75px;
+    animation-name: OPEN;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+
+  .MicrosoftTopBar{
+    background-color: white;
+    background-size: 1%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform-origin: center;
+    width: 100%;
+    height: 75px;
+    z-index: 2;
+    filter: blur(10px);
+    opacity: 10%;
+  }
+
+  .MicrosoftCode{
+    background-color: #43D9BD;
+    position: absolute;
+    translate: -50% 50%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    filter: blur(5px);
+  }
+
+  @keyframes OPEN2 {
+    0%{top: 80%; opacity: 0%;}
+    40%{opacity: 0%;}
+    100%{top: 50%; opacity: 100%;}
+  }
+
+  .MicrosoftCodeNoBlur{
+    background-color: transparent;
+    filter: blur(0px);
+    position: absolute;
+    translate: -50% -50%;
+    z-index: 5;
+    width: 75%;
+    height: 5%;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    opacity: 0%;
+    animation-name: OPEN2;
+    animation-delay: 0.1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+
+
+  
+.MicrosoftCodeText{
+  position: absolute;
+   z-index: 1;
+    
+  top: 120%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+  font-family: "CooperHewitt";
+
+  }
+  .MicrosoftCodeText2{
+    color: #43D9BD;
+    position: absolute;
+     z-index: 1;
+      
+    top: -80%;
+    left: 0%;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  
+    font-family: "CooperHewitt";
+  
+    }
+
+    .MicrosoftCodeText3{
+      color: #43D9BD;
+      position: absolute;
+       z-index: 1;
+        
+      top: 0%;
+      left: 0%;
+      font-size: 20px;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    
+      font-family: "CooperHewitt";
+    
+      }
+
+    .MicrosoftCodeText2Blur{
+      color: #43D9BD;
+      position: absolute;
+       z-index: 1;
+        
+      top: -80%;
+      left: 0%;
+      font-size: 20px;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    
+      font-family: "CooperHewitt";
+      filter: blur(10px);
+    
+      }
+
+      .MicrosoftCodeText3Blur{
+        color: #43D9BD;
+        position: absolute;
+         z-index: 1;
+          
+        top: 0%;
+        left: 0%;
+        font-size: 20px;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        filter: blur(10px);
+        font-family: "CooperHewitt";
+      
+        }
